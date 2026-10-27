@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#185f52">
+ <meta name="description" content="勇敢开口英语探险：免费、无账号、浏览器本地记录的英语练习。">
+ <title>English Quest · 开口冒险岛</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <a class="skip" href="#main">跳到练习区</a>
+ <header class="topbar"><a class="brand" href="./index.html"><span class="brand-icon">✦</span><span>English Quest<small>开口冒险岛</small></span></a><span class="local-badge">● 无账号 · 本地进度</span></header>
+ <main id="main" tabindex="-1">
+  <section class="hero"><div><p class="eyebrow">YOUR VOICE, YOUR ADVENTURE</p><h1>不必完美，<br>开口就是<span>进步。</span></h1><p>从一句悄悄话开始，去完成属于你的英语冒险。<br>可以重听、重说、慢慢来。这里没有倒计时。</p></div><div class="hero-art" aria-hidden="true"><span class="orbit">✦</span><span class="island">🌱</span><div class="art-label">今天也勇敢一点点</div><span class="spark">✧</span></div></section>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <section class="dashboard" aria-label="练习概览"><div><span class="stat" id="stars">0</span><span>完成之星 ★</span></div><div><span class="stat" id="practiced">0</span><span>已练习小任务</span></div><div><span class="stat" id="timer">0:00</span><span id="timer-state">有效练习时间</span></div><button id="continue" class="primary" hidden>继续上次冒险 →</button></section>
+  <section id="map-view"><div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR MISSION</p><h2>你的探险地图</h2></div><span>任选一站 · 随时再来</span></div><div id="quest-map" class="quest-map"></div><p class="muted">星星代表完成练习，不代表已经掌握。建议每站留出 10–15 分钟，听一听、说两遍，再试着自由回答。</p></section>
+  <section id="play-view" class="play-view" hidden aria-label="当前练习"><div class="play-toolbar"><button id="back">← 探险地图</button><span id="mission-label"></span><label>语速 <select id="rate"><option value="0.75">慢一点</option><option value="0.9" selected>舒适</option><option value="1">正常</option></select></label></div><progress id="step-progress" max="1" value="0" aria-label="任务进度"></progress><div id="activity"></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div><div class="step-nav"><button id="previous">← 上一步</button><button id="next" class="primary" disabled>完成后继续 →</button></div><p class="muted small">口语只记录“已录音练习”或“已自主练习”，没有 AI 打分、语音识别或掌握判定。</p></section>
+  <section id="finish-view" class="finish" hidden><span aria-hidden="true">🌟</span><h2 tabindex="-1" id="finish-title">又向前迈了一步！</h2><p id="finish-copy"></p><button id="finish-map" class="primary">回到地图，看看下一站 →</button></section>
+  <aside id="break-note" class="notice" hidden>已经认真练习一会儿了。可以喝口水、看看远处，再回来。<button id="dismiss-break">知道啦</button></aside>
+  <section class="toolbox"><label><input type="checkbox" id="breaks" checked> 每练习约 10 分钟提醒休息</label><div><button id="export">导出练习报告</button><button id="reset" class="quiet">重置本机进度</button></div></section>
+  <details class="privacy"><summary>给孩子与家长：隐私、声音和使用说明</summary><p>这是公开可访问的免费静态学习工具，无账号、无付费、无应用后端。网页托管方可能保留常规访问日志；练习进度只保存在当前浏览器，不在设备间同步。请勿输入姓名、学校或联系方式。</p><p>录音仅在浏览器内存中临时回放，离开当前题目便清除，不上传、不写入练习报告。V1 不使用外部语音识别，不判断发音是否正确。录音需 HTTPS 或 localhost 和麦克风许可；不方便录音时，可明确选择自主开口练习。</p><p>优先播放随网页提供的示范音频。音频缺失时尝试浏览器朗读；系统声音的可用性、联网方式由浏览器或操作系统决定。没有声音时可以看示例后自主练习。默认闲置超过 90 秒或页面隐藏时暂停计时；录音中保持计时。</p></details>
+ </main><footer>Made for little brave voices. <span>每一次尝试，都值得被看见。</span></footer>
+ <noscript><p class="notice">请启用 JavaScript，才能加载课程和保存本地练习进度。</p></noscript>
+ <script type="module" src="./app.js"></script>
+</body></html>

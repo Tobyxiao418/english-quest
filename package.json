@@ -1,0 +1,8 @@
+{
+  "name": "english-quest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test", "check": "node --check app.js && node --check core.js"},
+  "description": "Private, local-first English speaking practice. No dependencies."
+}
